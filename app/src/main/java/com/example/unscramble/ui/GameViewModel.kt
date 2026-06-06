@@ -80,7 +80,7 @@ class GameViewModel : ViewModel() {
         }
     }
 
-    private fun shuffleCurrentWord(word: String): String {
+   private fun shuffleCurrentWord(word: String): String {
         val tempWord = word.toCharArray()
         tempWord.shuffle()
         while (String(tempWord) == word) {
